@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Timur Ikonnikov](https://up.htmlacademy.ru/htmlcss/30/user/1690249).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
