@@ -98,8 +98,72 @@
           </div>
         </section>
 
+        <section> <!--секция с поиском гостиницы в Седоне-->
+          <h2>Заинтересовались</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button type="button">Поиск гостиницы в Седоне</button>  
+        </section>
+
+        <section>
+          <!--скоро здесь будет секция с картой-->
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div>
+              <label for="arrival">Дата заезда:</label>
+              <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
+              <button type="button"><img src="img/calendar.svg" alt="calendar"></button>
+            </div>
+            <div>
+              <label for="departure">Дата выезда:</label>
+              <input id="departure" type="text" name="departure" placeholder="4 июля 2017">
+              <button type="button"><img src="img/calendar.svg" alt="calendar"></button>
+            </div>
+            <div>
+              <div>
+                <label for="olds">Взрослые:</label>
+                <div>
+                  <button type="button">-</button>
+                  <input id="olds" type="text" name="olds" placeholder="2">
+                  <button type="button">+</button>
+                </div>
+              </div>
+              <div>
+                <label for="kids">Дети:</label>
+                <div>
+                  <button type="button">-</button>
+                  <input id="kids" type="text" name="kids" placeholder="0">
+                  <button type="button">+</button>
+                </div>
+              </div>
+            </div>
+            <button>Найти</button>
+          </form>
+        </section>
+
+
+
       </main>
-    
+      
+      <footer>
+        <div>
+          <a>#visitsedona</a>
+          <span>Tел: <a href="tel:+74956660166">+7(495) 666-01-66</a> </span>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span> website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy"></a>
+        </div>
+
+      </footer>
+
     </div>
   </body>
 </html>
