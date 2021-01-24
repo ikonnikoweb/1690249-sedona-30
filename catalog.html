@@ -26,6 +26,7 @@
         <main>
             <section>
                 <!--секция с фильтром-->
+                <h1>Выбор гостиницы в Седоне</h1>
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <fieldset>
                         <legend>Инфраструктура:</legend>
@@ -67,9 +68,12 @@
 
                     <fieldset>
                         <legend>Стоимость в сутки (Р):</legend>
-
+                        <div>
+                            <label>от <input type="text" name="minimum" value="0"></label>
+                            <label>до <input type="text" name="maximum" value="3000"></label>
+                        </div>
                     </fieldset>
-
+                    <button type="submit">Показать</button>
                 </form>
             </section>
 
@@ -82,8 +86,8 @@
                     <li><a href="#">По рейтингу</a></li>
                 </ul>
                 <div class="arrows">
-                    <a><img src="img/icon-up.svg" alt="up"></a>
-                    <a href="#"><img src="img/icon-down.svg" alt="down"></a>
+                    <a>вверх</a>
+                    <a href="#">вниз</a>
                 </div>
             </section>
 
@@ -145,14 +149,14 @@
         <footer>
             <div>
                 <a>#visitsedona</a>
-                <span>Tел: <a href="tel:+74956660166">+7(495) 666-01-66</a> </span>
+                <span>Tел: <a href="tel:+74956660166">+7(495) 666-01-66</a></span>
             </div>
 
             <div>
                 <ul>
-                    <li><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#">Твиттер</a></li>
+                    <li><a href="#">Фейсбук</a></li>
+                    <li><a href="#">Ютуб</a></li>
                 </ul>
             </div>
 

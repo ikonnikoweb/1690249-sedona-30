@@ -24,98 +24,97 @@
       
       <main>
       
-        <section>  <!--секция промо с фоновой картинкой-->
+        <div>  <!--секция промо с фоновой картинкой-->
           <img src="img/welcome.png" alt="welcome" width="457" height="351">
-        </section>
+        </div>
       
         <section> <!--секция 5 причин-->
           <header>
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
-          
-          <div> <!-- 1 причина-->
-            
-            <div>
-              <h2>Настоящий городок</h2>
-              <span>№1</span>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            
-            <img src="img/1-reason.jpg" alt="real town" width="800" height="256">
-          </div>
-          
-          <div> <!--жильё, еда, сувениры-->
-            
-            <div>
-              <img src="img/icon-1.svg" alt="home" width="75" height="72">
-              <h2>Жильё</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </div>
-
-            <div>
-              <img src="img/icon-2.svg" alt="food" width="75" height="70">
-              <h2>Еда</h2>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-
-            <div>
-              <img src="img/icon-3.svg" alt="souvenir" width="64" height="77">
-              <h2>Сувениры</h2>
-              <p>Не только Китайского, но и местного производства!</p>
-            </div>
-          </div>
-        
-          <div> <!--2 причина-->
-            <img src="img/2-reason.jpg" alt="devil's bridge" width="800" height="256">
-            <div>
-              <h2>Там есть мост дьявола</h2>
-              <span>№2</span>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-          </div>
-
-          <div> <!-- 3, 4, 5 причины-->
-            
-            <div>
-              <h2>Небольшая площадь</h2>
-              <span>№3</span>
-              <p>Все достопримечательности находятся очень близко</p>
-            </div>
-
-            <div>
-              <h2>Красивая дорога</h2>
-              <span>№4</span>
-              <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-            </div>
-
-            <div>
-              <h2>Мало туристов</h2>
-              <span>№5</span>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </div>
-
-          </div>
+          <ol>
+            <li> <!-- 1 причина-->
+              <div>           
+                <div>
+                  <h2>Настоящий городок</h2>
+                  <span>№1</span>
+                  <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img src="img/1-reason.jpg" alt="real town" width="800" height="256">
+              </div>
+              <ul> <!--еда, жилье, сувениры-->
+                <li>
+                  <div>
+                    <h2>Жильё</h2>
+                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Еда</h2>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>Сувениры</h2>
+                    <p>Не только Китайского, но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li> <!--2 причина-->
+              <div> 
+                <img src="img/2-reason.jpg" alt="devil's bridge" width="800" height="256">
+                <div>
+                  <h2>Там есть мост дьявола</h2>
+                  <span>№2</span>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+              </div>
+            </li>
+            <li> <!--3 причина-->
+              <div>
+                <h2>Небольшая площадь</h2>
+                <span>№3</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li> <!--4 причина-->
+              <div>
+                <h2>Красивая дорога</h2>
+                <span>№4</span>
+                <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li> <!--5 причина-->
+              <div>
+                <h2>Мало туристов</h2>
+                <span>№5</span>
+                <p>Большинство едет в гранд каньон и толпится там</p>
+              </div>
+            </li>
+          </ol>
         </section>
 
         <section> <!--секция с поиском гостиницы в Седоне-->
-          <h2>Заинтересовались</h2>
+          <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button type="button">Поиск гостиницы в Седоне</button>  
         </section>
 
         <section>
+          <h2>Седона на карте</h2>
           <!--скоро здесь будет секция с картой-->
           <form action="https://echo.htmlacademy.ru" method="get">
             <div>
               <label for="arrival">Дата заезда:</label>
               <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
-              <button type="button"><img src="img/calendar.svg" alt="calendar"></button>
             </div>
             <div>
               <label for="departure">Дата выезда:</label>
-              <input id="departure" type="text" name="departure" placeholder="4 июля 2017">
-              <button type="button"><img src="img/calendar.svg" alt="calendar"></button>
+              <input id="departure" type="text" name="departure" placeholder="4 июля 2017"> 
             </div>
             <div>
               <div>
@@ -135,12 +134,9 @@
                 </div>
               </div>
             </div>
-            <button>Найти</button>
+            <button type="submit">Найти</button>
           </form>
         </section>
-
-
-
       </main>
       
       <footer>
@@ -151,9 +147,9 @@
 
         <div>
           <ul>
-            <li><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
-            <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-            <li><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+            <li><a href="#">Твиттер</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Ютуб</a></li>
           </ul>
         </div>
 
