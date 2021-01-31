@@ -1,98 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link rel="icon" href="favicon.ico"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+×ml">
     <link rel="apple-touch-icon" href="img/icon180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    
+  <body class="page-body">
+
     <div class="container">
-      
-      <header>  
-        <nav>
-          <ul>
+
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта Штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
-        <a>
+        <a class="main-header-logo">
           <img src="img/logo.svg" alt="логотип Седона." width="138" height="70">
         </a>
       </header>
-      
+
       <main>
-      
-        <div>  <!--секция промо с фоновой картинкой-->
+
+        <div class="promo">  <!--секция промо с фоновой картинкой-->
           <img src="img/welcome.svg" alt="Добро пожаловать в Седону." width="457" height="351">
         </div>
-      
-        <section> <!--секция 5 причин-->
-          <header>
+
+        <section class="reasons"> <!--секция 5 причин-->
+          <header class="reasons-header">
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </header>
-          <ol>
-            <li> <!-- 1 причина-->
-              <div>           
-                <div>
-                  <h2>Настоящий городок</h2>
+          <ol class="reasons-list">
+            <li class="reasons-item"> <!-- 1 причина-->
+              <div class="reasons-line">
+                <div class="reasons-line-descr">
+                  <h2>Настоящий<br> городок</h2>
                   <span>№1</span>
                   <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <img src="img/1-reason.jpg" alt="Какое-то здание с флагами США, на фоне местных гор." width="800" height="256">
               </div>
-              <ul> <!--еда, жилье, сувениры-->
-                <li>
-                  <div>
+              <ul class="reasons-tips"> <!--еда, жилье, сувениры-->
+                <li class="tips-item">
+                  <div class="tips-item-wrap">
                     <h2>Жильё</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
                   </div>
                 </li>
-                <li>
-                  <div>
+                <li class="tips-item">
+                  <div class="tips-item-wrap">
                     <h2>Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                   </div>
                 </li>
-                <li>
-                  <div>
+                <li class="tips-item">
+                  <div class="tips-item-wrap">
                     <h2>Сувениры</h2>
-                    <p>Не только Китайского, но и местного производства!</p>
+                    <p>Не только Китайского, но и местного<br> производства!</p>
                   </div>
                 </li>
               </ul>
             </li>
-            <li> <!--2 причина-->
-              <div> 
+            <li class="reasons-item"> <!--2 причина-->
+              <div class="reasons-line">
                 <img src="img/2-reason.jpg" alt="Мост дьявола." width="800" height="256">
-                <div>
-                  <h2>Там есть мост дьявола</h2>
+                <div class="reasons-line-descr">
+                  <h2>Там есть<br> мост дьявола</h2>
                   <span>№2</span>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
               </div>
             </li>
-            <li> <!--3 причина-->
+            <li class="reasons-item"> <!--3 причина-->
               <div>
                 <h2>Небольшая площадь</h2>
                 <span>№3</span>
                 <p>Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li> <!--4 причина-->
+            <li class="reasons-item"> <!--4 причина-->
               <div>
                 <h2>Красивая дорога</h2>
                 <span>№4</span>
                 <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li> <!--5 причина-->
+            <li class="reasons-item"> <!--5 причина-->
               <div>
                 <h2>Мало туристов</h2>
                 <span>№5</span>
@@ -102,63 +106,81 @@
           </ol>
         </section>
 
-        <section> <!--секция с поиском гостиницы в Седоне-->
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button type="button">Поиск гостиницы в Седоне</button>  
+        <section class="search"> <!--секция с поиском гостиницы в Седоне-->
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="button search-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
-        <section>
-          <h2>Седона на карте</h2>
+        <section class="map">
+          <h2 class="visually-hidden">Седона на карте</h2>
           <!--скоро здесь будет секция с картой-->
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <div>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="search-item">
               <label for="arrival">Дата заезда:</label>
               <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
             </div>
-            <div>
+            <div class="search-item">
               <label for="departure">Дата выезда:</label>
-              <input id="departure" type="text" name="departure" placeholder="4 июля 2017"> 
+              <input id="departure" type="text" name="departure" placeholder="4 июля 2017">
             </div>
             <div>
               <div>
                 <label for="olds">Взрослые:</label>
                 <div>
-                  <button type="button">-</button>
+                  <button class="button-minus" type="button">-</button>
                   <input id="olds" type="text" name="olds" placeholder="2">
-                  <button type="button">+</button>
+                  <button class="button-plus" type="button">+</button>
                 </div>
               </div>
               <div>
                 <label for="kids">Дети:</label>
                 <div>
-                  <button type="button">-</button>
+                  <button class="button-minus" type="button">-</button>
                   <input id="kids" type="text" name="kids" placeholder="0">
-                  <button type="button">+</button>
+                  <button class="button-plus" type="button">+</button>
                 </div>
               </div>
             </div>
-            <button type="submit">Найти</button>
+            <button class="button button-find" type="submit">Найти</button>
           </form>
         </section>
       </main>
-      
-      <footer>
-        <div>
+
+      <footer class="main-footer">
+        <div class="contacts">
           <a>#visitsedona</a>
-          <span>Tел: <a href="tel:+74956660166">+7(495) 666-01-66</a> </span>
+          <span>Tел: <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a> </span>
         </div>
 
-        <div>
-          <ul>
-            <li><a href="#">Твиттер</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Ютуб</a></li>
+        <div class="socials">
+          <ul class="socials-list">
+            <li class="socials-list-item">
+              <a href="#">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list-item">
+              <a href="#">
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                  </svg>
+              </a>
+            </li>
+            <li class="socials-list-item">
+              <a href="#">
+                <svg width="20" height="16" viewBox="0 0 20 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+                  </svg>
+              </a>
+            </li>
           </ul>
         </div>
 
-        <div>
-          <span> website by</span>
+        <div class="copyright">
+          <span class="copyright-text"> website by</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="htmlacademy"></a>
         </div>
 
