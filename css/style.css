@@ -82,6 +82,11 @@ img {
   font-weight: 700;
 }
 
+.site-navigation a:not([href]) {
+  color: var(--btn-reserv);
+  cursor: pointer;
+}
+
 .site-navigation a:hover {
   color: var(--blue-hover);
 }
@@ -299,6 +304,11 @@ img {
 .copyright {
   text-transform: uppercase;
 }
+
+/*страница с гостиницами*/
+
+
+
 
 
 
