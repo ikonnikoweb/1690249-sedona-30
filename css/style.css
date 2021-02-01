@@ -26,8 +26,7 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 400;
   color: var(--basic-black);
   background-color: var(--body-bg);
 }
@@ -79,6 +78,8 @@ img {
 
 .site-navigation a {
   color: var(--basic-black);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .site-navigation a:hover {
@@ -101,28 +102,41 @@ img {
 
 .reasons {
   text-align: center;
+
 }
 
-.resons-header h1 {
-  font-size: 21px;;
+.reasons-header h1 {
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .reasons-header p {
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .reasons-list {
   list-style: none;
+  line-height: 21px;
+}
+
+.reasons-list h2 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .reasons-line-descr {
   color: var(--basic-white);
   background-color: var(--basic-blue);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .reasons-tips {
   list-style: none;
+  text-transform: uppercase;
 }
 .tips-item:first-child {
   background: url(../img/icon-1.svg) no-repeat;
@@ -138,10 +152,12 @@ img {
 
 .tips-item h2 {
   font-size: 21px;
+  line-height: 21px;
 }
 
 .tips-item p {
   font-weight: 400;
+
 }
 
 .reasons-item:nth-child(3),
@@ -149,17 +165,20 @@ img {
 .reasons-item:nth-child(5) {
   background-color: var(--special-bg);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 /*секция поиска*/
 
 .search {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .search-text {
@@ -181,7 +200,7 @@ img {
 
 .search-button:active {
   background-color: var(--reserv-focus);
-  color: var(--reserv-focus-text);
+  color: var(--button-focus-text);
 }
 
 /*карта*/
@@ -195,6 +214,8 @@ img {
   background-color: var(--basic-white);
   width: 500px;
   margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .search-form input {
@@ -226,14 +247,12 @@ img {
   cursor: pointer;
 }
 
-.button-find:active,
 .button-find:focus {
   background-color: var(--blue-focus);
   color: var(--button-focus-text);
 }
 
-.button-plus,
-.button-minus {
+.form-btn {
   border: none;
   text-align: center;
   background-color: var(--body-bg);
@@ -243,15 +262,11 @@ img {
 }
 
 
-.button-plus:hover,
-.button-minus:hover {
+.form-btn:hover {
   color: var(--basic-black);
 }
 
-.button-plus:focus,
-.button-minus:focus,
-.button-plus:active,
-.button-minus:active {
+.form-btn:active {
   color: var(--basic-blue);
 }
 
@@ -263,6 +278,8 @@ img {
 
 .contacts {
   font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .contacts-phone {
@@ -278,6 +295,11 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
+
+.copyright {
+  text-transform: uppercase;
+}
+
 
 
 
