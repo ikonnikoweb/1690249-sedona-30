@@ -18,6 +18,7 @@
   --reserv-focus: #503e33;
   --button-focus-text: rgba(255, 255, 255, 0.3);
   --footer-bg: rgba(255, 255, 255, 0.9);
+  --sorting-text: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -306,17 +307,158 @@ img {
 }
 
 /*страница с гостиницами*/
+.inner-page {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*фильтр*/
+
+.filters {
+  background-color: var(--basic-blue);
+  background-image: url(../img/catalog-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter legend {
+  color: var(--basic-white);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter label{
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+.filter-btn {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid var(--basic-white);
+  cursor:pointer;
+  overflow: hidden;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  padding: 7px 35px 8px 36px;
+  border-radius: 2px;
+  outline: none;
+}
+
+.filter-btn:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/*сортировка*/
+
+.sorting span {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sorting h2 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-list a {
+  text-transform: uppercase;
+  color: var(--sorting-text);
+  border-bottom: 1px dotted var(--basic-blue);
+  cursor: pointer;
+}
+
+.sorting-list a:hover {
+  color: var(--basic-blue);
+}
+
+.sorting-list a:active {
+  color: var(--basic-black);
+  border: none;
+}
+
+.sorting-list .current {
+  border: none;
+  color: var(--basic-blue);
+}
+
+/*подходящие варианты*/
+
+.results-list {
+  list-style: none;
+}
+
+.results-info {
+  text-transform: uppercase;
+}
+
+.results-info a {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results-info a:hover {
+  color: var(--basic-blue);
+  cursor: pointer;
+}
+
+.results-info a:active {
+  color: var(--sorting-text);
+}
 
 
+.rating {
+  text-transform: uppercase;
+}
+
+.rating span {
+  line-height: 21px;
+}
+
+.results-btn {
+  font-weight: 700;
+}
+
+.results-btn:active {
+  color: var(--button-focus-text);
+}
+
+.results-btn-more:hover {
+  background-color: var(--blue-hover);
+}
+
+.results-btn-more:active {
+  background-color: var(--blue-focus);
+}
+
+.results-btn-reserv {
+  background-color: var(--btn-reserv);
+}
 
 
+.results-btn-reserv:hover {
+  background-color: var(--reserv-hover);
+}
 
-
-
-
-
-
-
+.results-btn-reserv:active {
+  background-color: var(--reserv-focus);
+}
 
 
 
