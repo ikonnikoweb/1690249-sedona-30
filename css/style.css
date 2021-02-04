@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--body-bg);
+
 }
 
 .container {
@@ -37,6 +38,10 @@ body {
   margin: 0 auto;
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -46,6 +51,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  margin: 0;
 }
 .button {
   color: var(--basic-white);
@@ -71,10 +80,36 @@ img {
 	overflow: hidden;
 }
 
-/*шапка*/
+.page {
+  height: 100%;
+}
 
+/*шапка*/
+.main-header {
+  box-sizing: border-box;
+  min-height: 56px;
+  position: relative;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  right: 531px;
+
+}
 .site-navigation {
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 200px;
 }
 
 .site-navigation a {
@@ -102,35 +137,55 @@ img {
 .promo {
   background-color: var(--basic-blue);
   background-image: url(../img/promo-bg.jpg);
+  min-height: 509px;
+  display: grid;
 }
-
+.promo img {
+  justify-self: center;
+  align-self: center;
+}
 /*Причины*/
 
 .reasons {
   text-align: center;
-
 }
 
 .reasons-header h1 {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 57px;
+  margin-top: 42px;
 }
 
 .reasons-header p {
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 51px;
 }
 
 .reasons-list {
   list-style: none;
   line-height: 21px;
-}
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
+}
 .reasons-list h2 {
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.reasons-item:nth-child(1) {
+  grid-column: 1/-1;
+}
+
+.line-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .reasons-line-descr {
@@ -138,23 +193,78 @@ img {
   background-color: var(--basic-blue);
   font-weight: 400;
   text-transform: uppercase;
+  min-width: 400px;
+  box-sizing:border-box;
+  padding-top: 47px;
+
 }
 
+.line-one .reasons-line-descr {
+  grid-column: 1/2;
+}
+.line-one img {
+  grid-column: 2/3 ;
+}
+.reasons-line-descr h2 {
+  margin-bottom: 23px;
+}
+.line-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.line-two .reasons-line-descr {
+  grid-column: 3/4;
+}
+.line-two img {
+  grid-column: 1/3 ;
+}
+.reasons-line-descr h2 {
+  margin-bottom: 23px;
+}
+
+.first-descr p {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.two-descr p {
+  max-width: 301px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
 .reasons-tips {
+  box-sizing: border-box;
+  min-height: 330px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
-.tips-item:first-child {
-  background: url(../img/icon-1.svg) no-repeat;
+.reasons-item:nth-child(2) {
+  grid-column: 1/-1;
 }
 
-.tips-item:nth-child(2) {
-  background: url(../img/icon-2.svg) no-repeat;
+
+
+.reasons-item:nth-child(3) {
+  grid-column: 1/2;
+}
+.reasons-item:nth-child(4) {
+ grid-column: 2/3;
 }
 
-.tips-item:last-child {
-  background: url(../img/icon-3.svg) no-repeat;
+.reasons-item:nth-child(5) {
+  grid-column: 3/-1;
 }
+
+.tips-item {
+  margin-top: 160px;
+}
+
 
 .tips-item h2 {
   font-size: 21px;
@@ -163,40 +273,59 @@ img {
 
 .tips-item p {
   font-weight: 400;
-
 }
 
 .reasons-item:nth-child(3),
 .reasons-item:nth-child(4),
 .reasons-item:nth-child(5) {
+  box-sizing: border-box;
   background-color: var(--special-bg);
   font-weight: 400;
   text-transform: uppercase;
+  min-height: 256px;
+  padding-top: 47px;
+}
+
+.reasons-item-wrap h2 {
+  margin: 0 auto;
+  margin-bottom: 23px;
+  max-width: 120px;
+}
+
+.reasons-item-wrap p {
+  margin-top: 23px;
 }
 
 /*секция поиска*/
 
 .search {
+  box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
+  min-height: 300px;
+  padding-top: 58px;
 }
 
 .search-title {
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 41px;
 }
 
 .search-text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 50px;
 }
 
 .search-button {
   font-size: 21px;
   line-height: 26px;
   background-color: var(--btn-reserv);
+  padding: 30px 135px;
+  min-width: 568px;
 }
 
 .search-button:hover {
@@ -217,12 +346,51 @@ img {
 
 
 .search-form {
+  box-sizing: border-box;
   background-color: var(--basic-white);
-  width: 500px;
+  width: 568px;
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 55px;
+  min-height: 395px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+.arrival {
+  grid-column: 1/-1;
+}
+
+.departure {
+  grid-column: 1/-1;
+}
+
+.olds-kids {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.search-olds {
+  grid-column: 1/2;
+}
+.olds-kids input {
+  width: 38px;
+}
+.departure input {
+  box-sizing: border-box;
+  margin-left: 24px;
+  height: 38px;
+  padding: 6px 170px 6px 12px;
+}
+
+.arrival input {
+  box-sizing: border-box;
+  margin-left: 27px;
+  height: 38px;
+  padding: 6px 170px 6px 12px;
+}
+
 
 .search-form input {
   font: inherit;
@@ -279,21 +447,42 @@ img {
 /*подвал*/
 
 .main-footer {
+  box-sizing: border-box;
   background-color: var(--footer-bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 120px;
+  padding: 23px 138px 36px 111px;
+}
+
+.socials {
+  width: 150px;
+  justify-self: center;
 }
 
 .contacts {
   font-size: 21px;
   text-transform: uppercase;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-phone {
   color: inherit;
 }
 
+.contacts span {
+  margin-top: 8px;
+}
+
 .socials-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -304,6 +493,14 @@ img {
 
 .copyright {
   text-transform: uppercase;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.copyright span {
+  margin-right: 8px;
 }
 
 /*страница с гостиницами*/
