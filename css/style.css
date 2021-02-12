@@ -97,7 +97,7 @@ h2 {
   position: absolute;
   top: 0;
   right: 531px;
-
+  z-index: 10;
 }
 .site-navigation {
   padding: 0;
