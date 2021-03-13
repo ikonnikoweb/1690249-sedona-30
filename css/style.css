@@ -878,6 +878,7 @@ img {
   background-color: var(--basic-blue);
   background-image: url(../img/catalog-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 217px;
   padding-left: 72px;
   padding-right: 72px;
