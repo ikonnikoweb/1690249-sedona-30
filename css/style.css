@@ -27,6 +27,7 @@
   --toggle-shadow: rgba(171, 171, 171, 0.3);
   --rating-value: #666666;
   --autor-activ: #BDBBBC;
+  --welcome-bg: #23333e;
 }
 
 body {
@@ -171,7 +172,7 @@ img {
 /*промо*/
 
 .promo {
-  background-color: var(--basic-blue);
+  background-color: var(--welcome-bg);
   background-image: url(../img/promo-bg.jpg);
   min-height: 509px;
   display: -ms-grid;
@@ -199,6 +200,12 @@ img {
 
 .reasons {
   text-align: center;
+}
+
+.reasons-img {
+  height: 256px;
+  width: 800px;
+  margin: 0;
 }
 
 .reasons-header h1 {
@@ -1261,7 +1268,11 @@ label.min-price {
   line-height: 26px;
 }
 
-.results-info h3:hover {
+.results-info .hotel-name {
+  color: var(--basic-black);
+}
+
+.results-info .hotel-name:hover {
   color: var(--basic-blue);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -1269,7 +1280,7 @@ label.min-price {
   transition: all 0.3s ease;
 }
 
-.results-info h3:active {
+.results-info .hotel-name:active {
   color: var(--sorting-text);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
