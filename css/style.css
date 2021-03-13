@@ -67,9 +67,7 @@ img {
   height: auto;
 }
 
-.reasons-list h2 {
-  margin: 0;
-}
+
 .button {
   color: var(--basic-white);
   vertical-align: middle;
@@ -206,6 +204,8 @@ img {
   height: 256px;
   width: 800px;
   margin: 0;
+  object-fit: contain;
+  background-color: var(--basic-blue);
 }
 
 .reasons-header h1 {
@@ -236,6 +236,7 @@ img {
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .reasons-item:nth-child(1) {
@@ -473,6 +474,7 @@ img {
   background: url(../img/map.jpg) no-repeat;
   min-height: 594px;
   position: relative;
+  line-height: 0;
 }
 
 .search-form {
@@ -722,8 +724,8 @@ img {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 120px;
-  padding: 22px 138px 19px 111px;
-  margin-top: -128px;
+  padding: 23px 40px 19px;
+  margin-top: -120px;
 }
 
 .catalog-container .main-footer {
@@ -735,7 +737,7 @@ img {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   min-height: 120px;
-  padding: 27px 138px 19px 111px;
+  padding: 24px 40px 19px;
 }
 
 .catalog-footer .contacts-catalog {
@@ -745,7 +747,8 @@ img {
 .socials {
   -ms-grid-column-align: center;
       justify-self: center;
-  margin-left: 26px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
 .contacts {
@@ -765,7 +768,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-self: start;
+  justify-self: center;
   margin-left: 14px;
   -ms-flex-item-align: start;
       align-self: start;
@@ -791,7 +794,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-top: 10px;
+
 }
 
 .socials-list-item {
@@ -841,7 +844,7 @@ img {
 
 .copyright {
   text-transform: uppercase;
-  justify-self: end;
+  justify-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,6 +852,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 14px;
+  margin-right: 24px;
   -ms-flex-item-align: start;
       align-self: start;
 }
@@ -1362,6 +1366,8 @@ label.min-price {
   height: 90px;
   margin-top: 30px;
   margin-right: 29px;
+  object-fit: contain;
+  background-color: var(--basic-white)
 }
 
 .results-item-wrap {
