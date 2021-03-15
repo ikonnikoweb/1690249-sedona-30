@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+/* цвета */
 
 :root {
   --basic-white: #ffffff;
@@ -100,6 +95,7 @@ img {
 }
 
 /*шапка*/
+
 .main-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -188,6 +184,7 @@ img {
   width: 100%;
   height: 57px;
 }
+
 .promo img {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -195,6 +192,7 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
 /*Причины*/
 
 .reasons {
@@ -205,7 +203,8 @@ img {
   height: 256px;
   width: 800px;
   margin: 0;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-blue);
 }
 
@@ -470,6 +469,10 @@ img {
   transition: all 0.3s;
 }
 
+.search-button:focus:not(:focus-visible){
+  outline: none;
+}
+
 .search-button:hover {
   cursor: pointer;
   background-color: var(--reserv-hover);
@@ -481,6 +484,37 @@ img {
 }
 
 /*карта*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .map {
   background: url(../img/map.jpg) no-repeat;
@@ -504,36 +538,59 @@ img {
   position: absolute;
   top: 0;
   left: 316px;
-  box-shadow: 0px 7px 15px var(--form-shadow);
+  -webkit-box-shadow: 0px 7px 15px var(--form-shadow);
+          box-shadow: 0px 7px 15px var(--form-shadow);
 }
 
 .show-search-form {
   display: block;
+  animation: bounce 0.6s;
 }
+
+.form-error {
+  animation: shake 0.6s;
+}
+
 .search-item {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
 .arrival {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-bottom: 30px;
 }
 
 .departure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-bottom: 29px;
 }
 
 .olds-kids {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 55px;
 }
 
@@ -544,15 +601,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .search-kids {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
 }
 
 .departure label,
@@ -581,14 +641,7 @@ img {
   display: flex;
 }
 
-.departure input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 38px;
-  width: 346px;
-  padding: 6px 35px 6px 10px;
-}
-
+.departure input,
 .arrival input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -669,9 +722,6 @@ img {
   transition: all 0.3s;
 }
 
-
-
-
 .button-minus:active rect {
   fill: var(--basic-blue);
   -webkit-transition: all 0.3s;
@@ -718,6 +768,10 @@ img {
   transition: all 0.3s;
 }
 
+.button-find:focus:not(:focus-visible){
+  outline: none;
+}
+
 .form-btn {
   border: none;
   text-align: center;
@@ -735,6 +789,7 @@ img {
 }
 
 /*подвал*/
+
 .main-footer {
   z-index: 3;
 }
@@ -1168,7 +1223,7 @@ label.min-price {
   padding-left: 72px;
   padding-right: 72px;
   padding-top: 29px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--input-focus);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1272,7 +1327,6 @@ label.min-price {
   margin: 0;
   -ms-grid-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-
 }
 
 .results-info {
@@ -1385,7 +1439,8 @@ label.min-price {
   height: 90px;
   margin-top: 30px;
   margin-right: 29px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: var(--basic-white)
 }
 
@@ -1417,6 +1472,7 @@ label.min-price {
   width: 90px;
   margin-left: auto;
 }
+
 .rating-stars-three {
   width: 65px;
   margin-left: auto;
@@ -1434,8 +1490,3 @@ label.min-price {
   padding: 5px 13px 5px 13px;
   color: var(--rating-value);
 }
-
-
-
-
-
