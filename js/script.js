@@ -6,7 +6,7 @@ var searchForm = document.querySelector(".search-form"),
     inputOlds = document.querySelector(".olds-input");
     inputKids = document.querySelector(".kids-input");
 
-searchForm.classList.remove(".show-search-form"),
+searchForm.classList.remove("show-search-form"),
   searchButton.addEventListener("click", function (t) {
     t.preventDefault(),
     searchForm.classList.toggle("show-search-form");

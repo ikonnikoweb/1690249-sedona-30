@@ -760,7 +760,7 @@ img {
   cursor: pointer;
 }
 
-.button-find:focus {
+.button-find:active {
   background-color: var(--blue-focus);
   color: var(--button-focus-text);
   -webkit-transition: all 0.3s;
